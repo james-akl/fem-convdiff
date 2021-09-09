@@ -13,7 +13,7 @@ function kij = GLQuad(f,h)
 
     %---DESCRIPTION---%
     %Outputs the exact value of the desired integral, computed numerically
-    %using the Gauss-Legendre Quadrature. Refer to FEM_Report section 2.
+    %using the Gauss-Legendre Quadrature.
 
     %---VARIABLE DECLERATIONS---%
     x = [h/2*(1+1/sqrt(3)),h/2*(1-1/sqrt(3))]; %Gauss points.
