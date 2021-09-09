@@ -1,4 +1,4 @@
-# Finite Element Analysis of a 1D Convection–Diffusion Problem
+# Finite Element Analysis of 1D Convection–Diffusion
 
 This project explores the **formulation**, **implementation**, and **optimization** of a **Finite Element Method** for a **1D Convection–Diffusion** problem.
 
