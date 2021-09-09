@@ -18,7 +18,7 @@ tic
     %———USER-INPUT ERROR-HANDLING———%
     if (N <= 0 || isinf(N) || floor(N) ~= N || ~isreal(N)) disp('ERROR: N must be a strictly positive integer.'); return; end;
 
-	%———FORMULATION — INTEGRATION———%
+    %———FORMULATION — INTEGRATION———%
     %Equally-sized elements.
     [h,ke] = deal(1/N, zeros(3,3));
 
@@ -33,7 +33,7 @@ tic
     %———ASSEMBLY — BOUNDARY CONDITIONS — RESOLUTION———%
     [I,J] = deal([1:(2*N+1),2:N,2:N,2:N,(N+2):(2*N+1),2:(N),(N+2):(2*N+1)],[1:(2*N+1),3:(N+1),1:(N-1),(N+3):(2*N+1),1:N,(N+2):2*N,2:(N+1)]);
     [V] = [1,repelem(ke(1,1)+ke(3,3),N-1),1,repelem(ke(2,2),N),repelem(ke(1,3),N-1),repelem(ke(3,1),N-1),repelem(ke(1,2),N-1),repelem(ke(2,1),N),repelem(ke(3,2),N-1),repelem(ke(2,3),N)];
-    [K,Q] = deal(sparse(I,J,V,2*N+1,2*N+1),sparse([N+1],[1],[1],2*N+1,1)); 
+    [K,Q] = deal(sparse(I,J,V,2*N+1,2*N+1),sparse([N+1],[1],[1],2*N+1,1));
     [C] = K\Q;
 toc
 end
