@@ -1,6 +1,6 @@
 # Finite Element Analysis of 1D Convection–Diffusion
 
-This project explores the **formulation**, **implementation**, and **optimization** of a **Finite Element Method** for a **1D Convection–Diffusion** problem.
+This project explores the **formulation**, **implementation**, and **optimization** of a **Finite Element Method** for a **1D Convection–Diffusion** PDE.
 
 [Project Page](https://jamesakl.com/fem-convdiff) | [PDF](https://jamesakl.com/fem-convdiff.pdf)
 
